@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background: #cfd8dc;
+
+    margin: 0px;
+
+    font-family: 'Source Code Pro', monospace;
+
+    min-width: 408px;
+    
+}
+
+
+.ocultar{
+    display: none;
+}   
+
+
+
+/* padre */
+.contenedorPadre{
+
+    display: flex;
+
+    flex-flow: column nowrap;
+
+
+}
+
+    /* hijo contenedorPadre   y   padre */ 
+    .contenedorNombre{
+        padding: 5px;
+
+        background: #b0bec5;
+
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+       
+
+    }
+
+        .texto{
+            margin: 0px;
+
+            color: black;
+
+            font-size: 15px;
+
+            text-shadow: 2px 2px 5px #37474f;
+        }
+
+        /* hijo contenedorNombre*/
+        .nombre{
+            font-size: 25px;
+
+            padding: 5px;
+
+            text-align: center;
+        }
+
+
+    /* hijo contenedorPadre   y   padre */  
+    .contenedorDatos{
+
+        display: flex;
+
+        flex-flow: column nowrap;
+
+        min-width: 300px;
+
+        margin: 10px 50px;
+
+        justify-content: center;
+
+        align-items: center;
+
+        align-content: space-around;
+
+    }
+
+        /* hijo contenedorDatos*/
+        .cajaFoto{
+
+
+            flex: 1 1 auto;   
+
+            max-width: 250px;
+
+            margin: 25px 0px;
+            
+        }
+            /* hijo de cajaFoto */
+            .foto{
+
+                height: 250px;
+
+                width: 250px;
+
+                border-radius: 150px;
+
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+            }
+
+        /* hijo contenedorDatos*/
+        .tituloDatos{
+
+            flex: 1 1 auto;
+
+            margin-bottom: 2px;
+
+            width: 300px;
+
+            height: 50px;
+        
+        }
+
+            .botonDatos{
+
+                height: 100%;
+
+                width: 100%;
+
+                font-weight: 6;
+
+                font-size: 20px;
+
+                background-color: #37474f;
+
+                color: white;
+
+                border-radius: 15px;
+
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);  
+
+            }
+
+        
+        .caja{
+
+            margin: 10px;
+
+            padding: 10px;
+
+            width: 300px;
+
+            background-color: #b0bec5;
+
+            border-radius: 15px;
+
+            border: 2px solid #546e7a;
+
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* hijo contenedorDatos*/
+        .datoPersonal{
+
+            flex: 1 1 auto;
+  
+            text-align: center;
+
+        }
+
+ 
+        /* hijo contenedorDatos*/
+        .perfil{
+
+
+            flex: 1 1 auto;
+
+            text-align: justify;
+
+        }
+
+
+        /* hijo contenedorDatos */
+        .datosAdicionales{
+
+            flex: 1 1 auto;
+       
+        }
+
+                
+        .textoContenido{
+
+            text-align: justify;
+
+            margin: 30px 10px;
+
+        }
+
+
+/* dispositivos medianos */
+
+@media all and (min-width: 700px){
+
+    .contenedorDatos{
+
+        flex-flow: row nowrap;
+
+        margin: 10px 50px;
+
+        justify-content: space-around;
+
+    }
+
+    
+    .cajaMistica{
+
+        display: flex;
+
+        flex-flow: column nowrap;
+
+        width: 50%;
+
+        margin: 10px 10px 10px 50px;
+
+        align-self: center;
+    }
+
+    .datoPersonal{
+
+        display: inline;
+
+        align-self: center;
+        
+        text-align: center;
+
+        min-width: 100%;
+
+        
+    }
+
+    .tituloDatos{
+        display: none;
+    }
+
+    .perfil{
+
+        display: block;
+
+        width: auto;
+
+
+    
+    }
+
+    .datosAdicionales{
+
+        display: block;
+
+        flex: 1 1 auto;
+
+        height: 440px;
+   
+    }
+
+ 
+}      
+
+
+/* dispositivos grandes */
+
+@media all and (min-width: 1200px){
+
+    .datosAdicionales{
+
+        display: block;
+
+        flex: 1 1 auto;
+
+        height: 330px;
+   
+    }
+
+
+}
