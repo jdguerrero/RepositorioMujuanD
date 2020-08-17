@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Hola Mundo rama develop</h1>
+    
+    <div class="cajaFormulario">
+
+        <form class="form_contacto" action="" method="post">
+            <ul>
+              <li>
+                <h2 class="titulo">Formulario de Registro</h2>
+                <span class="requerido">(*) Campos obligatorios</span> </li>
+              <li>
+                <label for="nombre"><p class="texto">Nombre</p> &nbsp;</label>
+                <input type="text" name="nombre" placeholder="Ingrese Su Nombre" maxlength="20" pattern="[a-z A-Z]+" autofocus required /><span class="explicacion" >nombre</span>
+              </li>
+              <li>
+                <label for="correo texto"><p class="texto">Correo</p> &nbsp;</label>
+                <input type="text" name="correo" placeholder="usuario@empresa.dominio" required="email"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"><span class="explicacion">"..."@"...".".."</span>
+              </li>
+              <li>
+                <label for="facebook texto"><p class="texto">Facebook Profile</p>&nbsp;</label>
+                <input type="url" name="facebook" placeholder="Escribe la URL de perfil de facebook" maxlength="20" required><span class="explicacion">Profile</span>
+              </li>
+              <li>
+                <label for="nacimiento texto"><p class="texto">Fecha Nacimiento</p> &nbsp;</label>
+                <input type="date" name="nacimiento" required><span class="explicacion">Fecha Nacimiento</span>
+              </li>
+              <li>
+                <label for="registro texto"><p class="texto">Fecha y Hora de Registro</p>&nbsp;</label>
+                <input type="datetime-local" name="registro" required><span class="explicacion">Fecha/Hora de Registro</span>
+              </li>
+              <li>
+                <label for="identificacion texto" class="for"><p class="texto">Número de Documento</p>   &nbsp;</label>
+                <input type="text" name="identificacion" placeholder="Ingrese Número de Documento" pattern="[0-9]{5,20}" required><span class="explicacion">Mínimo 5 dígitos y máximo 20</span>
+              </li>
+              <li>
+                <label for="edad texto"><p class="texto">Edad</p>&nbsp;</label>
+                <input type="number" name="edad" placeholder="Ingrese su edad" min="1" max="100" required><span class="explicacion">Número entre 1 y 100</span>
+              </li>
+              <li>
+                <label for="color texto"><p class="texto">Color Favorito</p> &nbsp;</label>
+                <input type="color" name="color" placeholder="red" maxlength="70" required><span class="explicacion">Ingrese su color Favorito</span>
+              </li>
+              <li>
+                <button class="button_enviar" type="submit">Enviar</button>
+              </li>
+              
+              
+            </ul>
+          </form>
+
+
+       
+    </div>
+    
+
 </body>
 </html>
