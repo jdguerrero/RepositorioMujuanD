@@ -8,16 +8,57 @@
 </head>
 <body>
     
+    <div class="cajaFormulario">
 
-    <header class="pedro caja">
-        <h1 id="cristo">formulario cristo</h1>
-    </header>
+        <form class="form_contacto" action="" method="post">
+            <ul>
+              <li>
+                <h2>Formulario de Registro</h2>
+                <span class="requerido">(*) Campos obligatorios</span> </li>
+              <li>
+                <label for="nombre">Nombre &nbsp;</label>
+                <input type="text" name="nombre" placeholder="Ingrese Su Nombre" maxlength="20" pattern="[a-z A-Z]+" autofocus required /><span class="explicacion" >nombre</span>
+              </li>
+              <li>
+                <label for="correo">Correo &nbsp;</label>
+                <input type="text" name="correo" placeholder="usuario@empresa.dominio" required="email"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"><span class="explicacion">"..."@"...".".."</span>
+              </li>
+              <li>
+                <label for="facebook">Facebook Profile&nbsp;</label>
+                <input type="url" name="facebook" placeholder="Escribe la URL de perfil de facebook" maxlength="20" required><span class="explicacion">Profile</span>
+              </li>
+              <li>
+                <label for="nacimiento">Fecha Nacimiento &nbsp;</label>
+                <input type="date" name="nacimiento" required><span class="explicacion">Fecha Nacimiento</span>
+              </li>
+              <li>
+                <label for="registro">Fecha y Hora de Registro&nbsp;</label>
+                <input type="datetime-local" name="registro" required><span class="explicacion">Fecha/Hora de Registro</span>
+              </li>
+              <li>
+                <label for="identificacion" class="for">Número de Documento:   &nbsp;</label>
+                <input type="text" name="identificacion" placeholder="Ingrese Número de Documento" pattern="[0-9]{5,20}" required><span class="explicacion">Mínimo 5 dígitos y máximo 20</span>
+              </li>
+              <li>
+                <label for="edad">Edad:&nbsp;</label>
+                <input type="number" name="edad" placeholder="Ingrese su edad" min="1" max="100" required><span class="explicacion">Cll/Cra x # x n x</span>
+              </li>
+              <li>
+                <label for="color">Color Favorito: &nbsp;</label>
+                <input type="color" name="color" placeholder="red" maxlength="70" required><span class="explicacion">Ingrese su color Favorito</span>
+              </li>
+              <li>
+                <button class="button_enviar" type="submit">Enviar</button>
+              </li>
+              
+              
+            </ul>
+          </form>
 
-    <section class="jimenez caja">
-        <h1>soy el segundo h1</h1>
 
-    </section>
-
+       
+    </div>
+    
 
 </body>
 </html>
